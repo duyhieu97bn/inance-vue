@@ -18,7 +18,7 @@ export default {
 }
 </script>
 <style>
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css";
+@import "./style/font-awesome.min.css";
 </style>
 <style>
 #app {

@@ -61,7 +61,6 @@ export default {
     height: 118px;
 
     .header_contact {
-        width: calc(100% - 50px);
         height: 54px;
         padding: 0 25px;
         @include flexcenter;
@@ -74,7 +73,6 @@ export default {
     }
 
     .header_menu {
-        width: calc(100% - 50px);
         height: 64px;
         padding: 0 25px;
         @include flexcenter;
