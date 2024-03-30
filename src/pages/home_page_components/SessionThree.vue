@@ -1,5 +1,5 @@
 <template lang="">
-    <section class="about_section layout_padding-bottom">
+    <section class="about_section" :class="getClass">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 col-md-6">
@@ -26,17 +26,48 @@
 </template>
 <script>
 export default {
-
+  props: ["parentCompo"],
+  computed: {
+    getClass() {
+      if (this.parentCompo == "HomePage") {
+        return "layout_padding-bottom"
+      } else if (this.parentCompo == "AboutPage") {
+        return "layout_padding"
+      }
+      return ""
+    }
+  },
 }
 </script>
 <style lang="scss" scoped>
 .layout_padding-bottom {
-    padding-bottom: 120px;
+  padding-bottom: 120px;
 
-    .img-box img {
-        width: 100%;
-        overflow-clip-margin: content-box;
-        overflow: clip;
-    }
+  .img-box img {
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+a {
+  margin-top: 15px;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-transform: uppercase;
+  padding: 10px 45px;
+  background-color: #0355cc;
+  border: 1px solid #0355cc;
+  border-radius: 2px;
+  color: #ffffff;
+
+  &:hover {
+    color: #0355cc;
+  }
 }
 </style>

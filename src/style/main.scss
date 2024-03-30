@@ -15,6 +15,16 @@ body {
     line-height: 1.5;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+  &:hover {
+    &:hover {
+        background-color: transparent;
+    }
+  }
+}
+
 h1,
 h2,
 h3,
@@ -100,6 +110,11 @@ h6 {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.layout_padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .container {

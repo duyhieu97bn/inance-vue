@@ -55,7 +55,6 @@ export default {
             }
 
             a {
-                display: inline-block;
                 text-transform: uppercase;
                 padding: 10px 45px;
                 background-color: #ff8a1d;
@@ -63,10 +62,8 @@ export default {
                 border-radius: 5px;
                 color: #ffffff;
                 margin-top: 15px;
-                text-decoration: none;
 
                 &:hover {
-                    background-color: transparent;
                     color: #ff8a1d;
                 }
             }

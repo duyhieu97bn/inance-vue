@@ -45,7 +45,6 @@ export default {
             if (this.$route.name == item) {
                 return true
             }
-            console.log(item, this.$route);
             return false
         },
         selectMenu(route) {

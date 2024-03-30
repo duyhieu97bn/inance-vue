@@ -93,6 +93,13 @@ export default {
           transition: all 0.3s;
         }
       }
+      .name {
+        text-transform: uppercase;
+        padding-top: 20px;
+        line-height: 1.2;
+        font-weight: 500;
+        font-size: 1.25rem;
+      }
     }
 
     .box-active {
