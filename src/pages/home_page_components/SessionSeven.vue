@@ -72,9 +72,7 @@ export default {
         height: 50px;
         margin-bottom: 25px;
         padding-left: 25px;
-        background-color: #ffffff;
         outline: none;
-        color: #ffffff;
         box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
     }
 
